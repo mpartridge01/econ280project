@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{2}{c}{Math score}             &\multicolumn{2}{c}{Hindi Score}            \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{Endline math score}&\multicolumn{1}{c}{Endline math score}&\multicolumn{1}{c}{Endline Hindi score}&\multicolumn{1}{c}{Endline Hindi score}\\
+\hline
+Attendance (days)&      0.0067\sym{***}&      0.0082\sym{***}&      0.0043\sym{***}&      0.0047\sym{*}  \\
+            &    (0.0011)         &    (0.0019)         &    (0.0011)         &    (0.0022)         \\
+[1em]
+Attendance $\times$ $\mathbf{1}$\{female\}&                     &     -0.0019         &                     &     -0.0006         \\
+            &                     &    (0.0023)         &                     &    (0.0025)         \\
+[1em]
+Baseline score&      0.5641\sym{***}&      0.5632\sym{***}&      0.6775\sym{***}&      0.6776\sym{***}\\
+            &    (0.0385)         &    (0.0386)         &    (0.0363)         &    (0.0361)         \\
+\hline
+Observations&         535         &         535         &         537         &         537         \\
+R-squared   &       0.431         &       0.432         &       0.479         &       0.481         \\
+AP F-statistic&       1,207         &         419         &       1,244         &         441         \\
+Diff-in-Sargan p-value&       0.142         &       0.137         &       0.917         &       0.951         \\
+Effect of 90 days attendance&       0.607         &       0.569         &       0.385         &       0.370         \\
+\hline\hline
+\end{tabular}
+}
